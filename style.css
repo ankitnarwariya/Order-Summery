@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+.container{
+    width: 100%;
+    background: url(images/pattern-background-desktop.svg), hsl(225, 100%, 94%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 23%;
+    height: auto;
+    background: #fff;
+    border-radius: 2rem 2rem;
+    box-shadow: 0rem 0rem 1rem 0rem hsl(225deg 12% 88%);
+}
+
+.card-hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.card-body {
+    padding: 7%;
+    text-align: center;
+}
+
+.card-body h1 {
+    font-size: 2rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: 800;
+}
+
+p{
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 5%;
+    padding: 7%;
+    line-height: 2rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    padding: 3%;
+    background: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.5rem 0rem hsl(225deg 12% 88%);
+}
+
+.price-left{
+    display: flex;
+}
+
+img.icon {
+    margin-right: 1rem;
+}
+
+
+a.change-btn{
+    color: hsl(245, 75%, 52%);
+    font-weight: 800;
+}
+
+a.change-btn:hover{
+    color: #766cf1;
+    text-decoration: none;
+}
+
+a.cancel-btn:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+a.payment-btn {
+    display: block;
+    width: -webkit-fill-available;
+    background: hsl(245, 75%, 52%);
+    padding: 1.5rem 1rem;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 6%;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 0.5rem 0rem hsl(225deg 12% 88%);
+}
+
+a.payment-btn:hover{
+    background: #766cf1;
+}
+
+a.cancel-btn{
+    display: block;
+    width: -webkit-fill-available;
+    background: #fff;
+    padding: 1.5rem 1rem;
+    color: hsl(224, 23%, 55%);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .card{
+        width: 85%;
+    }
+
+    p{
+        font-size: 1.3rem;
+    }
+
+    .price {
+        font-size: 1.3rem;
+    }
+    
+    a.payment-btn {
+        padding: 2rem 1rem;
+        font-size: 1.3rem;
+    }
+
+    a.cancel-btn{
+        font-size: 1.3rem;
+    }
+  }
